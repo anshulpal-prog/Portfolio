@@ -10,11 +10,11 @@ html {
 
 /* Clip-path for Experience section */
 .clip-path-custom-2 {
-  clip-path: polygon(0 0, 100% 7%, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 3%, 98% 95%, 0 98%);
   background-color: #160000; /* optional, gradient ke neeche contrast */
 }
 
 .clip-path-custom-3 {
-  clip-path: polygon(0 0, 100% 7%, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 2%, 98% 95%, 0 98%);
   background-color: #181818; /* optional, gradient ke neeche contrast */
 }

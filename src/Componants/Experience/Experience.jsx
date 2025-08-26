@@ -20,7 +20,7 @@ const Experience = () => {
       {/* Experience Timeline */}
       <div className="relative">
         {/* Vertical line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-1 bg-white h-full"></div>
+        <div className="absolute top -0 left-1/2 transform -translate-x-1/2 w-1 h-full bg-white "></div>
 
         {/* Experience Entries */}
         {experiences.map((experience, index) => (
@@ -29,7 +29,7 @@ const Experience = () => {
             className="relative flex flex-col sm:flex-row items-center mb-16"
           >
             {/* Timeline Circle */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
+            <div className="absolute left-1/2 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-14 h-14 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
               <img
                 src={experience.img}
                 alt={experience.company}
@@ -40,7 +40,7 @@ const Experience = () => {
             {/* Content Section */}
             <div
               className={`w-full sm:max-w-md p-4 sm:p-8 rounded-2xl shadow-2xl border border-white bg-gray-900 backdrop-blur-md transform transition-transform duration-300 hover:scale-105
-                ${index % 2 === 0 ? "sm:ml-auto" : "sm:mr-auto"} mx-4`}
+                ${index % 2 === 0 ? "sm:ml-auto" : "sm:mr-auto"} mx-4 mt-20 sm:mt-0 relative z-20`}
             >
               {/* Flex container for image and text */}
               <div className="flex items-center space-x-6">
